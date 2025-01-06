@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Axel Charles</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.png" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./footer.css" />
+  </head>
+  <body>
+    <header>
+      <section id="home">
+        <nav class="nav">
+          <input type="checkbox" id="nav-check" />
+          <div class="nav-header"></div>
+          <div class="nav-btn">
+            <label for="nav-check">
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
+          </div>
+
+          <div class="nav-links">
+            <a href="#apropos"><div class="nav-effect">Sobre mí</div></a>
+            <a href="#projets"><div class="nav-effect">Proyectos</div></a>
+            <a href="#contact"><div class="nav-effect">Contacto</div></a>
+            <div class="custom-select-container">
+              <div class="custom-select">
+                <div class="custom-select-trigger" onclick="toggleOptions()">
+                  <img
+                    id="selectedImage"
+                    src="https://flagcdn.com/w40/es.png"
+                    alt="Español"
+                  />
+                  <span id="selectedText">Español</span>
+                </div>
+                <div class="custom-select-options" id="optionsList">
+                  <div
+                    class="custom-select-option"
+                    onclick="selectOption('https://flagcdn.com/w40/us.png', 'English', 'index_en.html')"
+                  >
+                    <img src="https://flagcdn.com/w40/us.png" alt="English" />
+                    <span>English</span>
+                  </div>
+                  <div
+                    class="custom-select-option"
+                    onclick="selectOption('https://flagcdn.com/w40/fr.png', 'Français', 'index.html')"
+                  >
+                    <img src="https://flagcdn.com/w40/fr.png" alt="Français" />
+                    <span>Français</span>
+                  </div>
+                  <div
+                    class="custom-select-option"
+                    onclick="selectOption('https://flagcdn.com/w40/es.png', 'Español', 'index_es.html')"
+                  >
+                    <img src="https://flagcdn.com/w40/es.png" alt="Español" />
+                    <span>Español</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ligne"></div>
+          <div class="image_container"></div>
+        </nav>
+      </section>
+    </header>
+
+    <main>
+      <div class="area">
+        <div class="filtre"></div>
+        <div class="title">
+          <h1>
+            Axel Charles
+            <h5>Mi Portafolio</h5>
+          </h1>
+        </div>
+        <img src="./images/logo_clean.png" alt="logo" />
+      </div>
+
+      <section class="about" id="apropos">
+        <div class="flow-button">
+          <a href="#home"
+            ><img src="./images/point.png" data-section="home" alt="punto"
+          /></a>
+          <a href="#apropos"
+            ><img src="./images/point.png" data-section="apropos" alt="punto"
+          /></a>
+          <a href="#projets"
+            ><img src="./images/point.png" data-section="projets" alt="punto"
+          /></a>
+          <a href="#contact"
+            ><img src="./images/point.png" data-section="contact" alt="punto"
+          /></a>
+        </div>
+        <h2>¿Quién soy?</h2>
+
+        <div class="carousel">
+          <div class="group">
+            <div class="card">
+              <img src="./images/photo_corse.jpg" alt="Photo carrousel" />
+            </div>
+            <div class="card">
+              <img src="./images/photo_corse2.jpg" alt="Photo carrousel" />
+            </div>
+            <div class="card">
+              <img src="./images/photo_corse3.jpg" alt="Photo carrousel" />
+            </div>
+            <div class="card">
+              <img src="./images/photo_porto.jpg" alt="Photo carrousel" />
+            </div>
+            <div class="card">
+              <img src="./images/photo_porto2.jpeg" alt="Photo carrousel" />
+            </div>
+            <div class="card">
+              <img src="./images/photo_porto3.jpg" alt="Photo carrousel" />
+            </div>
+            <div class="card">
+              <img src="./images/photo_grece.jpg" alt="Photo carrousel" />
+            </div>
+          </div>
+          <div class="group">
+            <div class="card">
+              <img src="./images/photo_corse.jpg" alt="Photo carrousel" />
+            </div>
+            <div class="card">
+              <img src="./images/photo_corse2.jpg" alt="Photo carrousel" />
+            </div>
+            <div class="card">
+              <img src="./images/photo_corse3.jpg" alt="Photo carrousel" />
+            </div>
+            <div class="card">
+              <img src="./images/photo_porto.jpg" alt="Photo carrousel" />
+            </div>
+            <div class="card">
+              <img src="./images/photo_porto2.jpeg" alt="Photo carrousel" />
+            </div>
+            <div class="card">
+              <img src="./images/photo_porto3.jpg" alt="Photo carrousel" />
+            </div>
+            <div class="card">
+              <img src="./images/photo_grece.jpg" alt="Photo carrousel" />
+            </div>
+          </div>
+        </div>
+        <div class="about-content">
+          <div class="competences">
+            <div class="bar-black"></div>
+            <h3>Mis Habilidades</h3>
+            <ul>
+              <li>Desarrollo en varios lenguajes de programación ⚙️</li>
+              <li>Gestión de datos y bases de datos 💾</li>
+              <li>Uso de herramientas de control de versiones (Git) 📂</li>
+              <li>Trabajo en equipo 🤝</li>
+            </ul>
+            <h3>Mis Lenguajes y Herramientas</h3>
+            <ul class="light">
+              <li>Java<img src="./images/java.png" alt="Logo Java" /></li>
+              <li>
+                Python / Flask<img
+                  src="./images/python.svg"
+                  alt="Logo Python"
+                />
+              </li>
+              <li>
+                Php / Laravel<img src="./images/php.png" alt="Logo Php" />
+              </li>
+              <li>
+                SQLite / PostgreSQL<img
+                  src="./images/bdd.png"
+                  alt="Logo Base de datos"
+                />
+              </li>
+              <li>
+                Html / CSS <img src="./images/html.png" alt="Logo Html" /><img
+                  src="./images/css.png"
+                  alt="Logo CSS"
+                />
+              </li>
+              <li>
+                Eclipse <img src="./images/eclipse.svg" alt="Logo Eclipse" />
+              </li>
+              <li>
+                Suite JetBrains
+                <img src="./images/jetbrains.png" alt="Logo JetBrains" />
+              </li>
+              <li>Git<img src="./images/git.png" alt="Logo Git" /></li>
+            </ul>
+            <h3>Mis Cualidades</h3>
+            <ul>
+              <li>Espíritu de equipo 🤝</li>
+              <li>Dinámico 💥</li>
+              <li>Perseverante 💪</li>
+              <li>Innovador 💡</li>
+              <li>Meticuloso 🔍</li>
+            </ul>
+            <div class="bar-black"></div>
+          </div>
+
+          <div class="about-block">
+            <p>
+              Me llamo Axel CHARLES, estudiante de segundo año de Informática en
+              el IUT de Lens. Apasionado por la informática y los Esports, estoy
+              especialmente interesado en el desarrollo web y la gestión de
+              bases de datos.
+              <br />
+              <br />
+              Domino varios lenguajes de programación, incluyendo Java, Python
+              con Flask y PHP con Laravel. Disfruto trabajando en equipo y estoy
+              constantemente motivado para aprender y asumir nuevos desafíos.
+              <br />
+              <br />
+              Dinámico, perseverante e innovador, me gusta encontrar soluciones
+              creativas a los problemas técnicos. Mis experiencias han
+              fortalecido mi espíritu de equipo y mi capacidad para adaptarme a
+              diferentes entornos.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="projets" id="projets">
+        <article>
+          <h2>Proyectos Personales</h2>
+          <div class="projets_article">
+            <div class="loldle">
+              <a href="/portfolio/loldle_es.html">
+                <img src="./images/loldle_logo.png" alt="Logo loldle" />
+                <h3>
+                  Loldle <br />
+                  (Java, Java FX, DERBY JDBC)
+                </h3>
+              </a>
+            </div>
+
+            <div class="blackjack">
+              <a href="/portfolio/blackjack_es.html">
+                <img src="./images/blackjack_logo.png" alt="Logo blackjack" />
+                <h3>
+                  Blackjack <br />
+                  (Java, Java FX)
+                </h3>
+              </a>
+            </div>
+
+            <div class="polycardia">
+              <a href="/portfolio/polycardia_es.html">
+                <img src="./images/polycardia_logo.png" alt="Logo polycardia" />
+                <h3>
+                  Polycardia <br />
+                  (Python, Flask, SQLite, Html, CSS)
+                </h3>
+              </a>
+            </div>
+
+            <div class="portfolio">
+              <a href="/portfolio/portfolio.html">
+                <img src="./images/portfolio_logo.png" alt="Logo portfolio" />
+                <h3>
+                  Site portfolio <br />
+                  (Html, CSS, JavaScript)
+                </h3>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <div class="bar-white"></div>
+
+        <article>
+          <h2>Proyectos SAE (Situaciones de Aprendizaje y Evaluación)</h2>
+          <div class="projets_article">
+            <div class="lensjudge">
+              <a href="/portfolio/lensjudge_es.html">
+                <img src="./images/lensjudge_logo.png" alt="Logo lensjudge" />
+                <h3>
+                  LensJudge <br />
+                  (Java)
+                </h3>
+              </a>
+            </div>
+            <div class="competition">
+              <a href="/portfolio/competition_es.html">
+                <img
+                  src="./images/competition_logo.png"
+                  alt="Logo compétition"
+                />
+                <h3>
+                  Site gestion de compétition <br />
+                  (Php, Laravel, SQLite, Html, CSS)
+                </h3>
+              </a>
+            </div>
+            <div class="marathon">
+              <a href="/portfolio/marathon_es.html">
+                <img src="./images/marathon_logo.png" alt="Logo marathon" />
+                <h3>
+                  Marathon du web <br />
+                  (Php, Laravel, SQLite, Html, CSS)
+                </h3>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <div class="bar-white"></div>
+
+        <article>
+          <h2>Proyectos de Curso</h2>
+          <div class="projets_article">
+            <div class="puissance4">
+              <a href="/portfolio/puissance4_es.html">
+                <img
+                  src="./images/puissance4_logo.png"
+                  alt="Logo puissance 4"
+                />
+                <h3>
+                  Puissance 4 <br />
+                  (Java, Java FX)
+                </h3>
+              </a>
+            </div>
+            <div class="price">
+              <a href="/portfolio/price_es.html">
+                <img
+                  src="./images/price_logo.png"
+                  alt="Logo the price is right"
+                />
+                <h3>
+                  The price is right <br />
+                  (Python, Flask, API, Html, CSS, JavaScript)
+                </h3>
+              </a>
+            </div>
+            <div class="bomberman">
+              <a href="/portfolio/bomberman_es.html">
+                <img src="./images/bomberman_logo.png" alt="Logo bomberman" />
+                <h3>
+                  Bomberman <br />
+                  (Java, Java FX)
+                </h3>
+              </a>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="contact" id="contact">
+        <h2>Contacto</h2>
+        <div class="bar-black"></div>
+        <div class="contact-links">
+          <div class="contact-block">
+            <h2><img src="./images/mail.png" alt="mail" /></h2>
+            <ul>
+              <li>charlesaxel59@gmail.com</li>
+            </ul>
+          </div>
+
+          <div class="contact-block">
+            <h2><img src="./images/phone.png" alt="phone" /></h2>
+            <ul>
+              <li>06 19 75 48 54</li>
+            </ul>
+          </div>
+          <div class="contact-block">
+            <h2><img src="./images/position.png" alt="position" /></h2>
+            <ul>
+              <li>
+                Nord, France
+                <img
+                  class="flag"
+                  src="./images/french_flag.jpg"
+                  alt="drapeau français"
+                />
+              </li>
+            </ul>
+          </div>
+          <div class="contact-block">
+            <h2><img src="./images/link.png" alt="lien" /></h2>
+            <ul>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/axel-charles/"
+                  target="_blank"
+                  ><img src="./images/linkedin.png" alt="Linkedin"
+                /></a>
+                <a href="https://github.com/Charles-Axel" target="_blank"
+                  ><img src="./images/github.png" alt="GitHub"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="container">
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+    </div>
+    <footer id="footer">
+      <h2>Axel CHARLES</h2>
+      <ul class="footer-links">
+        <li class="zoom"><a href="index_es.html#home">Inicio</a></li>
+        <li class="zoom"><a href="index_es.html#apropos">Sobre mí</a></li>
+        <li class="zoom"><a href="index_es.html#projets">Proyectos</a></li>
+        <li class="zoom"><a href="index_es.html#contact">Contacto</a></li>
+      </ul>
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/in/axel-charles/" target="_blank"
+            ><img class="zoom" src="./images/linkedin.png" alt="Linkedin"
+          /></a>
+          <a href="https://github.com/Charles-Axel" target="_blank"
+            ><img class="zoom" src="./images/github.png" alt="GitHub"
+          /></a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="CV Axel CHARLES.pdf" download class="cv"
+            ><img src="./images/french_flag.jpg" alt="descargar" />
+            <p>Descargar CV</p></a
+          >
+        </li>
+        <li>
+          <a href="CV Axel CHARLES ENGLISH.pdf" download class="cv"
+            ><img src="./images/english_flag.png" alt="descargar" />
+            <p>Descargar CV</p></a
+          >
+        </li>
+      </ul>
+      <p>&copy; 2024 Axel Charles.</p>
+    </footer>
+
+    <script>
+      function toggleOptions() {
+        const options = document.getElementById("optionsList");
+        options.classList.toggle("active");
+      }
+
+      function selectOption(image, text, link) {
+        document.getElementById("selectedImage").src = image;
+        document.getElementById("selectedText").innerText = text;
+
+        // Redirige vers la page sélectionnée
+        window.location.href = link;
+
+        // Ferme le menu des options
+        document.getElementById("optionsList").classList.remove("active");
+      }
+
+      /* Responsive navBar */
+      const toggle = document.querySelector(".nav_toggle");
+      const navLinks = document.querySelector(".nav_links");
+      const navCheck = document.getElementById("nav-check");
+
+      if (toggle) {
+        if (navLinks) {
+          toggle.addEventListener("click", () => {
+            navLinks.classList.toggle("hidden");
+          });
+        }
+      }
+
+      window.addEventListener("resize", () => {
+        if (window.innerWidth > 880 && navCheck) {
+          navCheck.checked = false;
+        }
+      });
+
+      /* Bouton de nav latéral */
+      document.addEventListener("DOMContentLoaded", () => {
+        const sections = document.querySelectorAll("section");
+        const navImages = document.querySelectorAll(".flow-button img");
+
+        function getLuminance(rgb) {
+          const [r, g, b] = rgb.match(/\d+/g).map(Number);
+          return 0.299 * r + 0.587 * g + 0.114 * b;
+        }
+
+        function getBackgroundColor(element) {
+          let color = window.getComputedStyle(element).backgroundColor;
+          while (color === "rgba(0, 0, 0, 0)" || color === "transparent") {
+            element = element.parentElement;
+            if (!element) break;
+            color = window.getComputedStyle(element).backgroundColor;
+          }
+          return color;
+        }
+
+        function updateActiveSection() {
+          let activeSection = null;
+
+          sections.forEach((section) => {
+            const rect = section.getBoundingClientRect();
+            const viewportHeight = window.innerHeight;
+
+            const visibleTop = Math.max(0, rect.top);
+            const visibleBottom = Math.min(viewportHeight, rect.bottom);
+            const visibleHeight = visibleBottom - visibleTop;
+
+            if (visibleHeight > 0 && visibleHeight / rect.height > 0.1) {
+              activeSection = section.id;
+            }
+          });
+
+          const isWhiteMode =
+            activeSection === "contact" || activeSection === "apropos";
+
+          navImages.forEach((img) => {
+            const section = img.getAttribute("data-section");
+            if (isWhiteMode) {
+              img.src =
+                section === activeSection
+                  ? "images/point_select.png"
+                  : "images/point.png";
+            } else {
+              img.src =
+                section === activeSection
+                  ? "images/point_select_white.png"
+                  : "images/point_white.png";
+            }
+          });
+        }
+
+        // Écoute des événements
+        window.addEventListener("scroll", updateActiveSection);
+        window.addEventListener("resize", updateActiveSection);
+        updateActiveSection();
+      });
+    </script>
+  </body>
+</html>
