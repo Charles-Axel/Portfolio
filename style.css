@@ -47,7 +47,7 @@ img,
   height: 15vh;
   width: 100%;
   position: absolute;
-  z-index: 100;
+  z-index: 2000;
   background: rgba(40, 77, 99, 0.85);
 }
 
@@ -66,6 +66,7 @@ img,
   float: right;
   height: 15vh;
   width: 90vw;
+  margin-right: 200px;
 }
 
 .nav-effect {
@@ -169,24 +170,18 @@ section {
   justify-content: center;
   align-items: center;
 }
-/*
-select {
-  padding: 10px;
-  font-size: 16px;
-  border-radius: 5px;
-  border: 1px solid var(--primary-color);
-  background-color: var(--primary-color);
-  margin-right: 50px;
-}*/
+
 .custom-select-container {
   display: inline-block;
-  position: relative;
+  position: absolute;
+  top: 5vh;
+  right: 0;
 }
 .custom-select {
   width: 150px;
   position: relative;
   cursor: pointer;
-  margin-right: 50px;
+  margin-right: 20px;
 }
 .custom-select-trigger {
   display: flex;

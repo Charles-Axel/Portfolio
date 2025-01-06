@@ -26,38 +26,38 @@
             <a href="#apropos"><div class="nav-effect">À propos</div></a>
             <a href="#projets"><div class="nav-effect">Projets</div></a>
             <a href="#contact"><div class="nav-effect">Contact</div></a>
-            <div class="custom-select-container">
-              <div class="custom-select">
-                <div class="custom-select-trigger" onclick="toggleOptions()">
-                  <img
-                    id="selectedImage"
-                    src="https://flagcdn.com/w40/fr.png"
-                    alt="Français"
-                  />
-                  <span id="selectedText">Français</span>
+          </div>
+          <div class="custom-select-container">
+            <div class="custom-select">
+              <div class="custom-select-trigger" onclick="toggleOptions()">
+                <img
+                  id="selectedImage"
+                  src="https://flagcdn.com/w40/fr.png"
+                  alt="Français"
+                />
+                <span id="selectedText">Français</span>
+              </div>
+              <div class="custom-select-options" id="optionsList">
+                <div
+                  class="custom-select-option"
+                  onclick="selectOption('https://flagcdn.com/w40/us.png', 'English', 'index_en.html')"
+                >
+                  <img src="https://flagcdn.com/w40/us.png" alt="English" />
+                  <span>English</span>
                 </div>
-                <div class="custom-select-options" id="optionsList">
-                  <div
-                    class="custom-select-option"
-                    onclick="selectOption('https://flagcdn.com/w40/us.png', 'English', 'index_en.html')"
-                  >
-                    <img src="https://flagcdn.com/w40/us.png" alt="English" />
-                    <span>English</span>
-                  </div>
-                  <div
-                    class="custom-select-option"
-                    onclick="selectOption('https://flagcdn.com/w40/fr.png', 'Français', 'index.html')"
-                  >
-                    <img src="https://flagcdn.com/w40/fr.png" alt="Français" />
-                    <span>Français</span>
-                  </div>
-                  <div
-                    class="custom-select-option"
-                    onclick="selectOption('https://flagcdn.com/w40/es.png', 'Español', 'index_es.html')"
-                  >
-                    <img src="https://flagcdn.com/w40/es.png" alt="Español" />
-                    <span>Español</span>
-                  </div>
+                <div
+                  class="custom-select-option"
+                  onclick="selectOption('https://flagcdn.com/w40/fr.png', 'Français', 'index.html')"
+                >
+                  <img src="https://flagcdn.com/w40/fr.png" alt="Français" />
+                  <span>Français</span>
+                </div>
+                <div
+                  class="custom-select-option"
+                  onclick="selectOption('https://flagcdn.com/w40/es.png', 'Español', 'index_es.html')"
+                >
+                  <img src="https://flagcdn.com/w40/es.png" alt="Español" />
+                  <span>Español</span>
                 </div>
               </div>
             </div>
